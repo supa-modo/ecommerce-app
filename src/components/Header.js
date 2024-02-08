@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
+import {BsSearch} from "react-icons/bs"
 
 const Header = () => {
   return (
     <>
-      <header className="header-top-strip py-3">
+      <header className="header-top-strip py-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-6">
@@ -26,28 +27,32 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <header className="header-upper" py-3>
+      <header className="header-upper py-2">
+        <div className="container-xxl">
         <div className="row">
           <div className="col-2">
             <h2>
-              <Link className="text-white">Supamodo</Link>
+              <Link className="text-white">Esoko</Link>
             </h2>
           </div>
           <div className="col-5">
-            <div class="input-group mb-3">
+            <div className="input-group mb-2">
               <input
                 type="text"
-                class="form-control"
-                placeholder="Recipient's username"
-                aria-label="Recipient's username"
+                class="form-control py-2"
+                placeholder="Search Product Here..."
+                aria-label="Search Product Here..."
                 aria-describedby="basic-addon2"
               />
-              <span class="input-group-text" id="basic-addon2">
-                @example.com
+              <span class="input-group-text " id="basic-addon2">
+                <BsSearch/>
               </span>
             </div>
           </div>
           <div className="col-5"></div>
+
+                </div>
+
         </div>
       </header>
     </>
